@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+</head>
+<body>
+
+    <script>
+function addition(){
+    num = parseInt(document.getElementById("first").value);
+    num1 = parseInt(document.getElementById("second").value);
+    sum= num + num1;
+    document.getElementById("res").value=sum;
+    console.log("The button clciked")
+}
+
+function subtract(){
+    num = parseInt(document.getElementById("first").value);
+    num1 = parseInt(document.getElementById("second").value);
+    sum= num - num1;
+    document.getElementById("res").value=sum;
+    console.log("The button clciked")
+}
+
+function multiply(){
+    num = parseInt(document.getElementById("first").value);
+    num1 = parseInt(document.getElementById("second").value);
+    sum= num * num1;
+    document.getElementById("res").value=sum;
+    console.log("The button clciked")
+}
+
+function divide(){
+    num = parseInt(document.getElementById("first").value);
+    num1 = parseInt(document.getElementById("second").value);
+    sum= num / num1;
+    document.getElementById("res").value=sum;
+    console.log("The button clciked")
+}
+
+
+    </script>
+    <div class="calci" id="calci">
+    <h1>Calculator</h1>
+   value1: <input type="text" id="first"><br><br>
+   value2: <input type="text" id="second"><br>  <br>  
+   calculation total: <input type="text" id="res"><br>    <br>
+    <button type="button" onclick="addition()" id="add">+</button>
+    <button type="button" onclick="subtract()" id="sub">-</button>
+    <button type="button" onclick="multiply()" id="mul">*</button>
+    <button type="button" onclick="divide()" id="divide">/</button>
+    </div>
+
+
+</body>
+</html>
